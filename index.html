@@ -1,67 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+
 <title>Lucky Radios Car Decor</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#0f0f0f;
+background:#111;
 color:white;
 }
 
-/* Navbar */
-
 nav{
+background:black;
+padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 40px;
-background:black;
 }
 
 nav h1{
-color:#ff2d2d;
+color:red;
 }
 
 nav a{
 color:white;
+margin:10px;
 text-decoration:none;
-margin:0 10px;
 }
-
-.btn{
-background:#ff2d2d;
-padding:10px 20px;
-border-radius:6px;
-}
-
-/* Hero Section */
 
 .hero{
 text-align:center;
-padding:100px 20px;
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
-background-size:cover;
+padding:80px;
+background:#222;
 }
 
 .hero h2{
-font-size:48px;
-color:#ff2d2d;
+font-size:40px;
+color:red;
 }
 
-.hero p{
-font-size:20px;
+.btn{
+padding:12px 20px;
+background:red;
+color:white;
+border-radius:6px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
 }
-
-/* Services */
 
 .section{
-padding:60px 20px;
+padding:50px;
 text-align:center;
 }
 
@@ -74,49 +68,48 @@ justify-content:center;
 .card{
 background:#1b1b1b;
 margin:15px;
-padding:25px;
-width:220px;
-border-radius:10px;
-}
-
-/* Products */
-
-.product{
-background:#1b1b1b;
-margin:15px;
 padding:20px;
-width:200px;
+width:230px;
 border-radius:10px;
 }
 
-/* Contact */
+.card img{
+width:100%;
+border-radius:8px;
+}
 
-.contact{
+.map{
+width:100%;
+height:350px;
+border:0;
+}
+
+footer{
 background:black;
-padding:40px;
+padding:20px;
 text-align:center;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
+
 <h1>Lucky Radios</h1>
 
 <div>
 <a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </div>
-
-<a class="btn" href="tel:9828929219">Call Now</a>
 
 </nav>
 
-<section class="hero">
+<div class="hero">
 
 <h2>Lucky Radios Car Decor</h2>
 
@@ -124,9 +117,13 @@ text-align:center;
 
 <p>Sawar Deoli Choraha, Kekri Rajasthan</p>
 
-</section>
+<a class="btn" href="tel:9828929219">📞 Call Now</a>
 
-<section class="section">
+<a class="btn" href="https://wa.me/919636429219">💬 WhatsApp</a>
+
+</div>
+
+<section id="services" class="section">
 
 <h2>Our Services</h2>
 
@@ -134,22 +131,56 @@ text-align:center;
 
 <div class="card">
 <h3>Car Music System</h3>
-<p>Installation of stereo and speakers</p>
+<p>Car stereo and speaker installation</p>
 </div>
 
 <div class="card">
-<h3>Tractor Sound</h3>
-<p>Music system fitting in tractors</p>
+<h3>Tractor Sound System</h3>
+<p>Music system fitting for tractors</p>
 </div>
 
 <div class="card">
 <h3>Truck Speaker Setup</h3>
-<p>Powerful sound setup for trucks</p>
+<p>Powerful truck sound systems</p>
 </div>
 
 <div class="card">
 <h3>Amplifier Fitting</h3>
-<p>High power amplifier setup</p>
+<p>High power bass amplifier setup</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="products" class="section">
+
+<h2>Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/bluetooth-speaker.jpg">
+<h3>G-8888 Bluetooth Speaker</h3>
+<p>Portable Bluetooth speaker</p>
+</div>
+
+<div class="card">
+<img src="images/bass-tube.jpg">
+<h3>10 Inch Bass Tube</h3>
+<p>Kumawat Radios Sub Woofer</p>
+</div>
+
+<div class="card">
+<img src="images/dj-speaker.jpg">
+<h3>DJ Sound Speaker</h3>
+<p>High power DJ speaker box</p>
+</div>
+
+<div class="card">
+<img src="images/sound-box.jpg">
+<h3>Double Speaker Box</h3>
+<p>Powerful sound box system</p>
 </div>
 
 </div>
@@ -158,22 +189,17 @@ text-align:center;
 
 <section class="section">
 
-<h2>Our Products</h2>
+<h2>Shop Location</h2>
 
-<div class="cards">
-
-<div class="product">Car Stereo</div>
-<div class="product">Amplifier</div>
-<div class="product">Speakers</div>
-<div class="product">Bluetooth Player</div>
-
-</div>
+<iframe class="map"
+src="https://maps.google.com/maps?q=kekri%20rajasthan&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
 
 </section>
 
-<div class="contact">
+<section id="contact" class="section">
 
-<h2>Contact</h2>
+<h2>Contact Us</h2>
 
 <p>Rajesh Kumawat – 9828929219</p>
 
@@ -181,9 +207,16 @@ text-align:center;
 
 <p>Lucky Kumawat – 9166524309</p>
 
-<p>Kekri Rajasthan</p>
+<p>Sawar Deoli Choraha, Kekri Rajasthan</p>
 
-</div>
+</section>
+
+<footer>
+
+<p>© 2026 Lucky Radios Car Decor</p>
+
+</footer>
 
 </body>
+
 </html>
